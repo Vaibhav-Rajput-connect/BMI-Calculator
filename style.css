@@ -1,0 +1,158 @@
+:root{
+    --Underweight:orange;
+    --Healthy:green;
+    --Overweight:orangered;
+    --Obese:darkred;
+
+}
+
+body{
+    background-color: #beb19d;
+    display: grid;
+    place-items: center;
+    height: 100vh ;
+}
+h1{
+    text-align: center;
+}
+.container{
+    width: 90%;
+    max-width: 420px;
+    background-color: rgb(155, 152, 152);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0,0, 0, 0.25) ;
+    display:grid;
+    gap: 1rem;
+
+
+}
+.Calculator{
+    display: grid;
+    gap:1rem;
+}
+.Calculator div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.Calculator label{
+    flex: 0 1 120px;
+    font-weight: 600;
+}
+.Calculator input{
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    outline-color: LightBlue;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.Calculator button{
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid ;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #504b45;
+    color: #beb19d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bolder;
+
+}
+.Calculator button[type='reset']{
+    background:#444;
+}
+.Calculator button:hover{
+    filter: brightness(120%);
+}
+.output{
+    text-align: center;
+    font-weight: bolder;
+
+}
+.output #bmi{
+    font-size: 4rem;
+
+}
+.output #des{
+    text-transform: uppercase;
+}
+.scaleee{
+    display: flex;
+    font-weight: bold;
+}
+.scaleee div{
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 5px solid var(--color);
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 1rem;
+
+}
+.scaleee h4{
+    font-size: 0.9rem;
+    color: rgb(241, 223, 196);
+
+}
+.Underweight{
+    color: var(--Underweight);
+}
+.Healthy{
+    color: var(--Healthy);
+}
+.Overweight{
+    color: var(--Overweight);
+}
+.Obese{
+    color: var(--Obese);
+}
+@media (max-width: 480px) {
+  .bmiscale {
+    flex-direction: column;
+  }
+  .bmiscale div {
+    padding: 4px 10px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-left: 5px solid var(--color);
+  }
+
+  .bmiscale div:last-child {
+    border-bottom: 1px solid #eee;
+  }
+
+  .bmiscale h4 {
+    width: 120px;
+    text-align: start;
+  }
+
+  .bmiscale p {
+    font-size: 0.875rem;
+    margin-left: auto;
+  }
+}
+
+.underweight {
+  color: var(--underweight);
+}
+
+.healthy {
+  color: var(--normal);
+}
+
+.overweight {
+  color: var(--overweight);
+}
+
+.obese {
+  color: var(--obese);
+}
